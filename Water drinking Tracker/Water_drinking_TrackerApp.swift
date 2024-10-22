@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct Water_drinking_TrackerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+       WindowGroup {
+           ContentView()
         }
+        .modelContainer(for: DataItem.self)
     }
 }
